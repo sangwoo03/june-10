@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<style>
+			body{
+				text-align:center;
+				background-color:lightblue;
+			}
+			.hh{
+				font-size:4em;
+				font-weight:bold;
+				color:black;
+			}
+			.txt{
+				width:20%;
+				height:10%;
+				font-size:3em;	
+				color:red;
+				text-align:center;
+			}
+			.btn{
+				width:30%;
+				height:10%;
+				font-size:3em;	
+				color:white;
+				background-color:lightpink;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class='hh'>사진 선택</h1>
+
+        <img id='img1'><br><br><br>
+
+		<button class='btn' onclick='card1();'>사진 시작</button>
+		<button class='btn' onclick='card2();'>사진 멈춤</button>
+
+		<script>
+			setInterval(timer,300);
+
+			var i=0;
+			var state=0;
+
+			function timer()
+			{
+				switch(state){
+					case 1:
+						 document.getElementById('img1').src='3.png';
+						state = 10;
+					break;
+					case 10:
+                         document.getElementById('img1').src='20.png';
+						 state = 11;
+					break;
+					case 11:
+						 document.getElementById('img1').src='39.png';
+						 state = 1;
+					break;
+                    case 2:
+
+                    break;
+					default:
+						
+					break;
+				}
+				
+			}
+			function card1()
+			{
+				state=1;
+			}
+			function card2()
+			{
+				state=2;
+			}
+		</script>
+	</body>
+</html>

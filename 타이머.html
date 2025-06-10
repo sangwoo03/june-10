@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<style>
+			body{
+				text-align:center;
+				background-color:lightblue;
+			}
+			.hh{
+				font-size:4em;
+				font-weight:bold;
+				color:black;
+			}
+			.txt{
+				width:20%;
+				height:10%;
+				font-size:3em;	
+				color:red;
+				text-align:center;
+			}
+			.btn{
+				width:20%;
+				height:10%;
+				font-size:3em;	
+				color:hotpink;
+				background-color:lightpink;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class='hh'>타이머 예제</h1>
+		<input type='text' class='txt' id='txt1'><br><br><br><br>
+		<button class='btn' onclick='card1();'>시작</button>
+		<button class='btn' onclick='card2();'>멈춤</button>
+		<button class='btn' onclick='card3();'>지우기</button>
+
+		<script>
+			setInterval(timer,1);
+
+			var i=0;
+			var state=0;
+
+			function timer()
+			{
+				switch(state){
+					case 1:
+						i++;
+					break;
+					case 2:
+
+					break;
+					case 3:
+						i=0;
+					break;
+					default:
+						
+					break;
+				}
+				document.getElementById('txt1').value=i;
+			}
+			function card1()
+			{
+				state=1;
+			}
+			function card2()
+			{
+				state=2;
+			}
+			function card3()
+			{
+				state=3;
+			}
+		</script>
+	</body>
+</html>

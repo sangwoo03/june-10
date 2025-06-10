@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<style>
+			body{
+				text-align:center;
+				background-color: lightcyan;
+			}
+			.bt{
+				width:19%;
+				height:10%;
+				background-color:lightskyblue;
+				font-size:3em;
+				color:black;
+				font-weight:bold;
+			}
+			.txt{
+				width:30%;
+				height:10%;
+				font-size:4em;
+				font-weight:bold;
+				color:black;
+				text-align:center;
+				
+			}
+			.hh{
+				font-size:4em;
+				font-weight:bold;
+				color:black;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1 class='hh'>버튼 클릭</h1><br>
+		<input type='text' class='txt' id='txt1'><br><br><br>
+		<button class='bt' onclick='btn1_fnc();'> 1</button>
+		<button class='bt' onclick='btn2_fnc();'> 2</button>
+		<button class='bt' onclick='btn3_fnc();'> 3</button>
+		<button class='bt' onclick='btn4_fnc();'> 4</button>
+		<button class='bt' onclick='btn5_fnc();'> 5</button>
+		
+		<script>
+			function btn1_fnc()
+			{
+				document.getElementById('txt1').value ='1';
+			}
+			function btn2_fnc()
+			{
+				document.getElementById('txt1').value ='2';
+			}
+			function btn3_fnc()
+			{
+				document.getElementById('txt1').value ='3';
+			}
+			function btn4_fnc()
+			{
+				document.getElementById('txt1').value ='4';
+			}
+			function btn5_fnc()
+			{
+				document.getElementById('txt1').value ='5';
+			}
+		</script>
+	</body>
+</html>
